@@ -1,5 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "transient_prompt": {
+    "enabled": true, 
+    "delete_previous_line": true
+  },
   "blocks": [
     {
       "alignment": "left",
@@ -58,6 +62,14 @@
           "style": "powerline",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
+        },
+        {
+          "background": "#FFD700",
+          "foreground": "#000000",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \uf81d {{ .Venv }} ",
+          "type": "python"
         },
         {
           "background": "#6CA35E",
