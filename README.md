@@ -1,10 +1,10 @@
-# 🏠 Personal Dotfiles for Windows & WSL
+# 🏠 My Personal Dotfiles for Windows & WSL
 
-A curated collection of configuration files for a productive Windows development environment with WSL integration.
+My curated collection of configuration files for my productive Windows development environment with WSL integration.
 
 ## 📋 Quick Overview
 
-This dotfiles collection provides configurations for:
+This is my personal dotfiles collection that provides configurations for:
 - **PowerShell** with enhanced aliases and functions
 - **Fastfetch** system information display for multiple environments
 - **Oh My Posh** beautiful prompt theming
@@ -83,9 +83,11 @@ git clone <your-repo-url> ~/dotfiles
 # Then create symbolic links (see SETUP.md)
 ```
 
-## 🤝 Contributing
+## 📝 About This Project
 
-Feel free to fork this repository and customize it for your own needs. Each configuration is modular and can be used independently.
+This is my personal dotfiles repository, tailored specifically for my development workflow and preferences. While the configurations are publicly available, they are designed for my specific setup and use cases.
+
+Feel free to browse the configurations and adapt any parts that might be useful for your own setup, but please note that these are optimized for my particular environment and workflow.
 
 ## 📝 License
 
