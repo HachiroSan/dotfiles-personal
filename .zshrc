@@ -34,7 +34,10 @@ if [ -f ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-s
   source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
-# User configuration
+# PyEnv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
@@ -45,3 +48,9 @@ alias ls='lsd'
 
 # Add your custom aliases and exports below
 alias ll='ls -la'
+alias cls='clear'
+
+# TheFuck
+eval $(thefuck --alias)
+#Fuzzyfinder
+source <(fzf --zsh)
