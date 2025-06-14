@@ -54,3 +54,11 @@ alias cls='clear'
 eval $(thefuck --alias)
 #Fuzzyfinder
 source <(fzf --zsh)
+
+kfz() {
+  local pid
+  pid=$(ps -eo pid,user,comm,args --sort=-%mem | fzf --reverse --multi --preview 'ps -p $(awk "{print \$1}" <<< {}) -o pid,ppid,%cpu,%mem,etime,cmd' | awk '{print $1}')
+  [[ -n "$pid" ]] && kill -9 $pid
+}
+
+
