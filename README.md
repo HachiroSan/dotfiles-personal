@@ -1,22 +1,22 @@
-# 🏠 My Personal Dotfiles for Windows & WSL
+## My Personal Dotfiles
 
-My curated collection of configuration files for my productive Windows development environment with WSL integration.
+Configuration files for my Windows development environment with WSL integration.
 
-## 📋 Quick Overview
+### Overview
 
-This is my personal dotfiles collection that provides configurations for:
-- **PowerShell** with enhanced aliases and functions
-- **Fastfetch** system information display for multiple environments
-- **Oh My Posh** beautiful prompt theming
-- **Neovim** with WSL clipboard integration
-- **WSL** (Arch Linux & Ubuntu) with zsh configuration
+This repository contains my dotfiles for:
+- PowerShell with enhanced aliases and functions
+- Fastfetch system information display
+- Oh My Posh prompt theming
+- Neovim with WSL clipboard integration
+- WSL (Arch Linux & Ubuntu) with zsh configuration
 
-## 🗂️ Structure
+### 📁 Structure
 
 ```
 ├── configs/
 │   ├── powershell/         # PowerShell profile and modules
-│   ├── fastfetch/          # System info display configs (Windows, Arch, Ubuntu)
+│   ├── fastfetch/          # System info configs (Windows, Arch, Ubuntu)
 │   ├── oh-my-posh/         # Prompt themes
 │   ├── neovim/             # Neovim configurations
 │   └── wsl/                # WSL shell configurations
@@ -24,71 +24,43 @@ This is my personal dotfiles collection that provides configurations for:
 └── final_review_gate.py    # Interactive review script
 ```
 
-## 🚀 Quick Start
+### 🚀 Quick Start
 
-1. **Install Required Tools** - See [INSTALLATION.md](docs/INSTALLATION.md)
-2. **Setup Configurations** - See [SETUP.md](docs/SETUP.md)
-3. **Enjoy your enhanced terminal experience!**
+1. Install required tools - see [INSTALLATION.md](docs/INSTALLATION.md)
+2. Apply configurations - see [SETUP.md](docs/SETUP.md)
 
-## 📚 Documentation
+### Features
 
-- [📦 Installation Guide](docs/INSTALLATION.md) - What tools to install and how
-- [⚙️ Setup Guide](docs/SETUP.md) - How to apply the configurations
-- [🔧 Configuration Details](docs/README.md) - Detailed explanation of each config
+#### PowerShell Enhancements
+- Neovim integration (`vim` → `nvim`)
+- Enhanced file listing with `eza`
+- Interactive process management with `kfz`
+- Git status integration
 
-## 💡 Features
+#### Oh My Posh Integration
+I use Oh My Posh for:
+- Consistent theming across Windows PowerShell and WSL environments
+- Git integration showing branch status and changes at a glance
+- Performance indicators displaying execution time for long-running commands
+- Cross-platform compatibility ensuring the same prompt experience everywhere
 
-### PowerShell Enhancements
-- **Neovim alias** - `vim` → `nvim`
-- **eza integration** - Better `ls` with colors and icons
-- **Process killer** - `kfz` function for fzf-powered process management
-- **Git integration** - Enhanced git status in file listings
+#### WSL Integration
+- Seamless clipboard sharing between Windows and WSL
+- Configurations for both Arch Linux and Ubuntu
+- Enhanced zsh experience with custom aliases
 
-### Terminal Aesthetics
-- **Fastfetch** - Beautiful system information on startup
-- **Oh My Posh** - Powerline-style prompt with git integration
-- **Multi-environment** - Configs for Windows, Arch Linux, and Ubuntu
+### 📚 Documentation
 
-### Development Tools
-- **WSL Integration** - Seamless clipboard sharing with Windows
-- **Multiple distros** - Configs for both Arch Linux and Ubuntu
-- **Shell enhancements** - Improved zsh experience with aliases and functions
+- [Installation Guide](docs/INSTALLATION.md)
+- [Setup Guide](docs/SETUP.md)
+- [Configuration Details](docs/README.md)
 
-## 🎯 Terminal Commands Reference
+### About
 
-### WSL Launch Commands
-```powershell
-# Arch Linux
-C:\Users\Hachiro-X\AppData\Local\Microsoft\WindowsApps\wt.exe --profile "archlinux"
+This is my personal dotfiles repository, configured for my specific development workflow. These configurations are tailored to my environment and preferences.
 
-# Ubuntu
-C:\Users\Hachiro-X\AppData\Local\Microsoft\WindowsApps\wt.exe --profile "ubuntu"
-```
+Feel free to browse and adapt any configurations that might be useful for your setup.
 
-### PowerShell Functions
-- `l` - Long listing with eza
-- `ll` - Long listing with hidden files
-- `la` - All files
-- `lt` - Tree view
-- `lg` - Git status integration
-- `kfz` - Interactive process killer with fzf
+### License
 
-## ⚡ Quick Setup Commands
-
-```powershell
-# Clone this repository
-git clone <your-repo-url> ~/dotfiles
-
-# Follow the installation guide
-# Then create symbolic links (see SETUP.md)
-```
-
-## 📝 About This Project
-
-This is my personal dotfiles repository, tailored specifically for my development workflow and preferences. While the configurations are publicly available, they are designed for my specific setup and use cases.
-
-Feel free to browse the configurations and adapt any parts that might be useful for your own setup, but please note that these are optimized for my particular environment and workflow.
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
+MIT License
