@@ -167,7 +167,7 @@ binding_modes:
 keybindings:
   # Shift focus in a given direction.
   - commands: ['focus --direction left']
-    bindings: ['alt+h', 'alt+left', 'alt+q']
+    bindings: ['alt+h', 'alt+left', 'alt+shift+q']
   - commands: ['focus --direction right']
     bindings: ['alt+l', 'alt+right', 'alt+e']
   - commands: ['focus --direction up']
